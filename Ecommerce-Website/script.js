@@ -1,4 +1,4 @@
-/* Home page */
+/* Home page slideshow*/
 let index =0;
 displayImage();
 function displayImage(){
