@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -20,13 +25,13 @@ h2{
 }
 
 h4{
-    font-size: 46px;
+    font-size: 20px;
     color: #222;
 }
 
 h6{
-    font-weight: 700;
     font-size: 12px;
+    font-weight: 700;
 }
 
 p{
@@ -46,6 +51,8 @@ p{
 body{
     width: 100%;
 }
+
+
 
 /* Header section */
 #header{
@@ -99,3 +106,43 @@ body{
 #navbar li a.active{
     color: white;
 }
+
+
+
+/* Home page */
+#home{
+    height: 90vh;
+    justify-content: center;
+
+
+}
+.image{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+.shopnow{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50vh;
+    width: 100%;
+    text-align: center;
+  
+
+}
+
+
+
+/* Shop page */
+
+
+
+
+/* About page */
+
+
+
+
+/* Contact page */
