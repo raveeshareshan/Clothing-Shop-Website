@@ -15,18 +15,18 @@
 h1{
     font-size: 50px;
     line-height: 64px;
-    color: #222;
+    color: #302824;
 }
 
 h2{
     font-size: 46px;
     line-height: 54px;
-    color: #222;
+    color: #302824;
 }
 
 h4{
     font-size: 2.5vw;
-    color: #222;
+    color: #302824;
 }
 
 h6{
@@ -37,7 +37,7 @@ h6{
 p{
     font-size: 16px;
     margin: 15px 0 20px 0;
-    color: #465b52;
+    color: #AF9F8D;
 }
 
 .section-p1{
@@ -60,12 +60,18 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 5px 50px;
-    background-color: #B9B7B7;
+    background-color: #302824;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     z-index: 999;
     position: sticky;
     top: 0;
     left: 0;
+}
+
+#header img{
+    width: auto;
+    height: 24px;
+    margin-top: 5px;
 }
 
 #navbar{
@@ -83,7 +89,7 @@ body{
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
-    color: #004462;
+    color: #AF9F8D;
     transition: 0.4s ease;
     position: relative;
 }
@@ -96,7 +102,7 @@ body{
     height: 1.5px;
     bottom: 0;
     left: 0;
-    background-color: white;
+    background-color: #DEDCD7;
     transform-origin: bottom center;
     transition: 0.4s ease;
 }
@@ -108,8 +114,9 @@ body{
 
 #navbar li a:hover,
 #navbar li a.active{
-    color: white;
+    color: #DEDCD7;
 }
+
 
 
 
@@ -117,6 +124,8 @@ body{
 
 .image {
     width: 100%;
+    height: auto;
+    object-fit: cover;
     animation-name: fade;
     animation-duration: 1s;
 }
@@ -126,37 +135,37 @@ body{
     position: relative;
 }
 
-.shopnow {
-    background-color: white;
-    padding: 10px;
-    opacity: 60%;
-    position: absolute;
-    top: 75%;
-    left: 5%;
-    color: #004462;
-}
-
-.shopnow a{
-    font-size: 2.3vh;
-    font-weight: 500;
-    background-color: #B9B7B7;
+.shopnow button{
+    background-color: #302824;
+    width: 20vw;
+    height: 4vw;
+    font-size: 2vw;
     border: none;
-    padding: 0.5dvh;
-    border-radius: 8px;
-    transition: .3s;
-    text-decoration: none;
-    color: #004462;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    color: #DEDCD7;
+    z-index: 1;
+    overflow: hidden;
 }
 
-.shopnow a:hover {
-    background-color: #004462;
-    box-shadow: 0 0 0 5px #1a42825f;
-    color: #B9B7B7;
+.shopnow button::before {
+    content: '';
+    width: 0;
+    height: 4vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #AF9F8D 0%, #302824 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+   
+.shopnow button:hover::before {
+    width: 20vw;
 }
 
-.shopnow h4{
-    color: #004462;
-}
 
 
 /* Shop page */
