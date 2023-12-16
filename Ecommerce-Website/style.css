@@ -25,7 +25,6 @@ h2{
 }
 
 h4{
-    font-size: 2.5vw;
     color: #302824;
 }
 
@@ -179,8 +178,9 @@ body{
 #newarrivals .product-container{
     display: flex;
     justify-content: space-between;
-    background-color: #302824;
-}
+    padding: 20px;
+    flex-wrap: wrap;
+} 
 
 #newarrivals .product{
     width: 22%;
