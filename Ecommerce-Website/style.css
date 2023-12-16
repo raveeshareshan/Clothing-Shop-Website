@@ -121,7 +121,10 @@ body{
 
 
 /* Home page */
-
+/* Cover section */
+#cover{
+    background-color: #DEDCD7;
+}
 .image {
     width: 100%;
     height: auto;
@@ -147,6 +150,7 @@ body{
     color: #DEDCD7;
     z-index: 1;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .shopnow button::before {
@@ -166,7 +170,70 @@ body{
     width: 20vw;
 }
 
+/* New arrivals section */
+#newarrivals{
+    background-color: #DEDCD7;
+    text-align: center;
+}
 
+#newarrivals .product-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #302824;
+}
+
+#newarrivals .product{
+    width: 22%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #AF9F8D;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+#newarrivals .product:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.5);
+}
+
+#newarrivals .product img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#newarrivals .product .description{
+    text-align: start;
+}
+
+#newarrivals .product .description h5{
+    color: #AF9F8D;
+}
+
+#newarrivals .product .description .star{
+    font-size: 12px;
+    color: rgb(255, 196, 0);
+}
+
+#newarrivals .product .cart{
+    padding: 12px;
+    border-radius: 50%;
+    background-color: white;
+    color: #302824;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    border: 1px solid #AF9F8D;
+    transition: 0.2s ease;
+}
+
+#newarrivals .product .cart:hover{
+    background-color: #AF9F8D;
+}
 
 /* Shop page */
 
