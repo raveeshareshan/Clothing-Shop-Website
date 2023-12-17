@@ -39,11 +39,11 @@ p{
     color: #AF9F8D;
 }
 
-.section-p1{
+.section-padding{
     padding: 40px 80px;
 }
 
-.section-m1{
+.section-margin{
     margin: 40px 0;
 }
 
@@ -139,8 +139,8 @@ body{
 
 .shopnow button{
     background-color: #302824;
-    width: 20vw;
-    height: 4vw;
+    width: 15vw;
+    height: 3vw;
     font-size: 2vw;
     border: none;
     position: absolute;
@@ -168,6 +168,16 @@ body{
 .shopnow button:hover::before {
     width: 20vw;
 }
+
+/* Upcomming sales section */
+#sale{
+    padding: 8px 30px 6px;
+    background-color: #AF9F8D;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    font-size: 18px;
+    font-weight: 550;
+}
+
 
 /* New arrivals section */
 #newarrivals{
@@ -233,6 +243,60 @@ body{
 
 #newarrivals .product .cart:hover{
     background-color: #AF9F8D;
+}
+
+/* Banners section */
+#banner{
+    background-color: #DEDCD7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Banner 1 */
+#banner .bigbanner1{
+    background-color: #4D3269;
+    min-width: 380px;
+    height: 40vh;
+    align-items: center;
+    display: flex;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+#banner .bigbanner1 .topic{
+    margin-left: 26px;
+}
+
+#banner .bigbanner1 img{
+    height: 80%;
+    margin: 15px;
+    width: 155px;
+    border-radius: 25px;
+}
+
+/* Banner 2 */
+#banner .bigbanner2{
+    background-color: #C55821;
+    min-width: 380px;
+    height: 40vh;
+    align-items: center;
+    display: flex;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+#banner .bigbanner2 .topic{
+    margin-left: 26px;
+}
+
+#banner .bigbanner2 img{
+    height: 80%;
+    margin: 15px;
+    width: 155px;
+    border-radius: 25px;
 }
 
 /* Shop page */
