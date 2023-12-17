@@ -19,8 +19,8 @@ h1{
 }
 
 h2{
-    font-size: 46px;
-    line-height: 54px;
+    font-size: 30px;
+    line-height: 44px;
     color: #302824;
 }
 
@@ -35,7 +35,6 @@ h6{
 
 p{
     font-size: 16px;
-    margin: 15px 0 20px 0;
     color: #AF9F8D;
 }
 
@@ -245,58 +244,94 @@ body{
     background-color: #AF9F8D;
 }
 
-/* Banners section */
+/* Best sellings section */
 #banner{
     background-color: #DEDCD7;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
     flex-wrap: wrap;
+}
+
+#banner .text{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#banner button{
+    font-size: 12px;
+    font-weight: 560;
+    padding: 8px 16px;
+    margin-top: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid #302824;
+}
+
+#banner button:hover{
+    background-color: #DEDCD7;
 }
 
 /* Banner 1 */
 #banner .bigbanner1{
-    background-color: #4D3269;
+    background-color: #CAA870;
     min-width: 380px;
+    width: 48%;
     height: 40vh;
+    margin: 10px;
+    border-radius: 10px;
     align-items: center;
     display: flex;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.3);
     position: relative;
 }
 
 #banner .bigbanner1 .topic{
     margin-left: 26px;
+    width: 65%;
+    box-sizing: border-box;
+    float: left;
 }
 
 #banner .bigbanner1 img{
     height: 80%;
     margin: 15px;
-    width: 155px;
-    border-radius: 25px;
+    width: 165px;
+    border-radius: 10px;
+    float: right;
+    box-sizing: border-box;
 }
 
 /* Banner 2 */
 #banner .bigbanner2{
-    background-color: #C55821;
+    background-color: #BB9C7D;
     min-width: 380px;
+    width: 48%;
     height: 40vh;
+    margin: 10px;
+    border-radius: 10px;
     align-items: center;
     display: flex;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.3);
     position: relative;
+    overflow: hidden;
 }
 
 #banner .bigbanner2 .topic{
     margin-left: 26px;
+    width: 65%;
+    box-sizing: border-box;
+    float: left;
 }
 
 #banner .bigbanner2 img{
     height: 80%;
     margin: 15px;
-    width: 155px;
-    border-radius: 25px;
+    width: 165px;
+    border-radius: 10px;
+    float: right;
+    box-sizing: border-box;
 }
 
 /* Shop page */
