@@ -244,12 +244,9 @@ body{
     background-color: #AF9F8D;
 }
 
-/* Best sellings section */
+/* Quick Shopping section */
 #banner{
     background-color: #DEDCD7;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 #banner .text{
@@ -273,9 +270,16 @@ body{
     background-color: #DEDCD7;
 }
 
+/* big banner div */
+#banner .bigbanner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 /* Banner 1 */
 #banner .bigbanner1{
-    background-color: #CAA870;
+    background-color: #4F6481;
     min-width: 380px;
     width: 48%;
     height: 40vh;
@@ -283,8 +287,7 @@ body{
     border-radius: 10px;
     align-items: center;
     display: flex;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.3);
-    position: relative;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
 }
 
 #banner .bigbanner1 .topic{
@@ -313,9 +316,7 @@ body{
     border-radius: 10px;
     align-items: center;
     display: flex;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.3);
-    position: relative;
-    overflow: hidden;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
 }
 
 #banner .bigbanner2 .topic{
@@ -332,6 +333,163 @@ body{
     border-radius: 10px;
     float: right;
     box-sizing: border-box;
+}
+/* small banner div */
+#banner .smallbanner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* Banner3 */
+#banner .smallbanner1{
+    background-color: #D29D6B;
+    min-width: 280px;
+    width: 30%;
+    height: 25vh;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+}
+
+#banner .smallbanner1 .topic{
+    margin-left: 26px;
+    width: 65%;
+    box-sizing: border-box;
+    float: left;
+}
+
+#banner .smallbanner1 img{
+    height: 80%;
+    margin: 15px;
+    width: 140px;
+    border-radius: 10px;
+    float: right;
+    box-sizing: border-box;
+}
+
+/* banner4 */
+#banner .smallbanner2{
+    background-color: #A89C8E;
+    min-width: 280px;
+    width: 30%;
+    height: 25vh;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+}
+
+#banner .smallbanner2 .topic{
+    margin-left: 26px;
+    width: 65%;
+    box-sizing: border-box;
+    float: left;
+}
+
+#banner .smallbanner2 img{
+    height: 80%;
+    margin: 15px;
+    width: 140px;
+    border-radius: 10px;
+    float: right;
+    box-sizing: border-box;
+}
+
+/* banner5 */
+#banner .smallbanner3{
+    background-color: #CD6526;
+    min-width: 280px;
+    width: 30%;
+    height: 25vh;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+}
+
+#banner .smallbanner3 .topic{
+    margin-left: 26px;
+    width: 65%;
+    box-sizing: border-box;
+    float: left;
+}
+
+#banner .smallbanner3 img{
+    height: 80%;
+    margin: 15px;
+    width: 140px;
+    border-radius: 10px;
+    float: right;
+    box-sizing: border-box;
+}
+
+/* footer section */
+
+#footer{
+    justify-content: space-between;
+    background-color: #302824;
+    display: flex;
+}
+
+#footer h4{
+    color: #AF9F8D;
+    line-height: 50px;
+}
+
+#footer p{
+    color: #DEDCD7;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500px;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #DEDCD7;
+}
+
+#footer .col-1 .social a{
+    margin-right: 10px;
+}
+#footer .col-3{
+    margin-left: 10px;
+}
+
+#footer .col-2{
+    margin-left: 10px;
+}
+
+#footer .col-3 img{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#footer a{
+    transition: 0.4s ease;
+    position: relative;
+}
+
+#footer a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #DEDCD7;
+    transform-origin: bottom center;
+    transition: 0.4s ease;
+}
+
+#footer a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom center;
 }
 
 /* Shop page */
