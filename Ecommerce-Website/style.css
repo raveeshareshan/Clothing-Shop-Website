@@ -5,6 +5,10 @@
     to {opacity: 1}
 }
 
+@media (max-width:799px) {
+    
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,14 +17,14 @@
 }
 
 h1{
-    font-size: 50px;
+    font-size: 56px;
     line-height: 64px;
     color: #302824;
 }
 
 h2{
-    font-size: 30px;
-    line-height: 44px;
+    font-size: 40px;
+    line-height: 45px;
     color: #302824;
 }
 
@@ -34,7 +38,7 @@ h6{
 }
 
 p{
-    font-size: 16px;
+    font-size: 18px;
     color: #AF9F8D;
 }
 
@@ -68,7 +72,7 @@ body{
 
 #header img{
     width: auto;
-    height: 24px;
+    height: 40px;
     margin-top: 5px;
 }
 
@@ -186,7 +190,7 @@ body{
 
 #newarrivals .product-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
     flex-wrap: wrap;
 } 
@@ -237,7 +241,7 @@ body{
     bottom: 20px;
     right: 10px;
     border: 1px solid #AF9F8D;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 }
 
 #newarrivals .product .cart:hover{
@@ -247,6 +251,30 @@ body{
 /* Quick Shopping section */
 #banner{
     background-color: #DEDCD7;
+}
+
+#banner h4{
+    font-size: 24px;
+    font-weight: 550;
+}
+
+#banner h6{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#banner h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#banner h3{
+    font-size: 24px;
+}
+
+#banner .smallbanner h6{
+    font-size: 14px;
+    font-weight: 500;
 }
 
 #banner .text{
@@ -262,7 +290,7 @@ body{
     margin-top: 20px;
     background-color: transparent;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.3s;
     border: 1px solid #302824;
 }
 
@@ -274,25 +302,25 @@ body{
 #banner .bigbanner{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 /* Banner 1 */
 #banner .bigbanner1{
-    background-color: #4F6481;
-    min-width: 380px;
+    background-color: #AF9F8D;
+    min-width: 500px;
     width: 48%;
     height: 40vh;
     margin: 10px;
     border-radius: 10px;
     align-items: center;
     display: flex;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
 }
 
 #banner .bigbanner1 .topic{
     margin-left: 26px;
-    width: 65%;
+    width: 68%;
     box-sizing: border-box;
     float: left;
 }
@@ -300,7 +328,7 @@ body{
 #banner .bigbanner1 img{
     height: 80%;
     margin: 15px;
-    width: 165px;
+    width: 200px;
     border-radius: 10px;
     float: right;
     box-sizing: border-box;
@@ -308,20 +336,20 @@ body{
 
 /* Banner 2 */
 #banner .bigbanner2{
-    background-color: #BB9C7D;
-    min-width: 380px;
+    background-color: #AF9F8D;
+    min-width: 500px;
     width: 48%;
     height: 40vh;
     margin: 10px;
     border-radius: 10px;
     align-items: center;
     display: flex;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
 }
 
 #banner .bigbanner2 .topic{
     margin-left: 26px;
-    width: 65%;
+    width: 68%;
     box-sizing: border-box;
     float: left;
 }
@@ -329,29 +357,30 @@ body{
 #banner .bigbanner2 img{
     height: 80%;
     margin: 15px;
-    width: 165px;
+    width: 200px;
     border-radius: 10px;
     float: right;
     box-sizing: border-box;
 }
 /* small banner div */
 #banner .smallbanner{
+    margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 /* Banner3 */
 #banner .smallbanner1{
-    background-color: #D29D6B;
-    min-width: 280px;
-    width: 30%;
+    background-color: #AF9F8D;
+    min-width: 340px;
+    width: 31%;
     height: 25vh;
     margin: 10px;
     border-radius: 10px;
     align-items: center;
     display: flex;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
 }
 
 #banner .smallbanner1 .topic{
@@ -364,7 +393,7 @@ body{
 #banner .smallbanner1 img{
     height: 80%;
     margin: 15px;
-    width: 140px;
+    width: 120px;
     border-radius: 10px;
     float: right;
     box-sizing: border-box;
@@ -372,15 +401,15 @@ body{
 
 /* banner4 */
 #banner .smallbanner2{
-    background-color: #A89C8E;
-    min-width: 280px;
-    width: 30%;
+    background-color: #AF9F8D;
+    min-width: 340px;
+    width: 31%;
     height: 25vh;
     margin: 10px;
     border-radius: 10px;
     align-items: center;
     display: flex;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
 }
 
 #banner .smallbanner2 .topic{
@@ -393,7 +422,7 @@ body{
 #banner .smallbanner2 img{
     height: 80%;
     margin: 15px;
-    width: 140px;
+    width: 120px;
     border-radius: 10px;
     float: right;
     box-sizing: border-box;
@@ -401,15 +430,15 @@ body{
 
 /* banner5 */
 #banner .smallbanner3{
-    background-color: #CD6526;
-    min-width: 280px;
-    width: 30%;
+    background-color: #AF9F8D;
+    min-width: 340px;
+    width: 31%;
     height: 25vh;
     margin: 10px;
     border-radius: 10px;
     align-items: center;
     display: flex;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
 }
 
 #banner .smallbanner3 .topic{
@@ -422,7 +451,7 @@ body{
 #banner .smallbanner3 img{
     height: 80%;
     margin: 15px;
-    width: 140px;
+    width: 120px;
     border-radius: 10px;
     float: right;
     box-sizing: border-box;
@@ -438,14 +467,19 @@ body{
 
 #footer h4{
     color: #AF9F8D;
-    line-height: 50px;
+    line-height: 70px;
 }
 
 #footer p{
     color: #DEDCD7;
     font-size: 14px;
-    line-height: 25px;
-    font-weight: 500px;
+    line-height: 35px;
+    font-weight: 500;
+}
+
+#footer p i{
+    font-size: 20px;
+    margin-right: 15px;
 }
 
 #footer a{
@@ -453,9 +487,6 @@ body{
     color: #DEDCD7;
 }
 
-#footer .col-1 .social a{
-    margin-right: 10px;
-}
 #footer .col-3{
     margin-left: 10px;
 }
@@ -479,17 +510,17 @@ body{
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 1.5px;
+    height: 1px;
     bottom: 0;
     left: 0;
     background-color: #DEDCD7;
-    transform-origin: bottom center;
+    transform-origin: bottom left;
     transition: 0.4s ease;
 }
 
 #footer a:hover::after{
     transform: scaleX(1);
-    transform-origin: bottom center;
+    transform-origin: bottom left;
 }
 
 /* Shop page */
