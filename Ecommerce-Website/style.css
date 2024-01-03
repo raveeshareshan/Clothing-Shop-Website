@@ -147,9 +147,9 @@ body{
 
 .shopnow button{
     background-color: #302824;
-    width: 15vw;
-    height: 3vw;
-    font-size: 2vw;
+    width: 20vw;
+    height: 4vw;
+    font-size: 2.5vw;
     border: none;
     position: absolute;
     top: 80%;
@@ -457,7 +457,7 @@ body{
 
 /* Strat Media Query */
 /* Tab size */
-@media (max-width:760px) {
+@media (max-width:780px) {
     #navbar{
         display: flex;
         flex-direction: column;
@@ -508,7 +508,7 @@ body{
 }
 
 /* Mobile Phone size */
-@media (max-width: 360px) {
+@media (max-width: 380px) {
     #navbar{
         width: 200px;
     }
