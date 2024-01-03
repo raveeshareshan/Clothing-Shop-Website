@@ -59,6 +59,9 @@ body{
     color: #AF9F8D;
     font-size: 24px;
 }
+#close{
+    display: none;
+}
 #header{
     display: flex;
     align-items: center;
@@ -301,14 +304,13 @@ body{
 }
 
 /* big banner div */
-#banner .bigbanner{
+#banner .bigbanner-section{
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-/* Banner 1 */
-#banner .bigbanner1{
+#banner .bigbanner{
     background-color: #AF9F8D;
     min-width: 500px;
     width: 48%;
@@ -320,14 +322,14 @@ body{
     box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
 }
 
-#banner .bigbanner1 .topic{
+#banner .bigbanner .topic{
     margin-left: 26px;
     width: 68%;
     box-sizing: border-box;
     float: left;
 }
 
-#banner .bigbanner1 img{
+#banner .bigbanner img{
     height: 80%;
     margin: 15px;
     width: 200px;
@@ -336,44 +338,16 @@ body{
     box-sizing: border-box;
 }
 
-/* Banner 2 */
-#banner .bigbanner2{
-    background-color: #AF9F8D;
-    min-width: 500px;
-    width: 48%;
-    height: 40vh;
-    margin: 10px;
-    border-radius: 10px;
-    align-items: center;
-    display: flex;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
-}
-
-#banner .bigbanner2 .topic{
-    margin-left: 26px;
-    width: 68%;
-    box-sizing: border-box;
-    float: left;
-}
-
-#banner .bigbanner2 img{
-    height: 80%;
-    margin: 15px;
-    width: 200px;
-    border-radius: 10px;
-    float: right;
-    box-sizing: border-box;
-}
 /* small banner div */
-#banner .smallbanner{
+#banner .smallbanner-section{
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-/* Banner3 */
-#banner .smallbanner1{
+
+#banner .smallbanner{
     background-color: #AF9F8D;
     min-width: 340px;
     width: 31%;
@@ -385,14 +359,14 @@ body{
     box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
 }
 
-#banner .smallbanner1 .topic{
+#banner .smallbanner .topic{
     margin-left: 26px;
     width: 65%;
     box-sizing: border-box;
     float: left;
 }
 
-#banner .smallbanner1 img{
+#banner .smallbanner img{
     height: 80%;
     margin: 15px;
     width: 120px;
@@ -401,63 +375,6 @@ body{
     box-sizing: border-box;
 }
 
-/* banner4 */
-#banner .smallbanner2{
-    background-color: #AF9F8D;
-    min-width: 340px;
-    width: 31%;
-    height: 25vh;
-    margin: 10px;
-    border-radius: 10px;
-    align-items: center;
-    display: flex;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
-}
-
-#banner .smallbanner2 .topic{
-    margin-left: 26px;
-    width: 65%;
-    box-sizing: border-box;
-    float: left;
-}
-
-#banner .smallbanner2 img{
-    height: 80%;
-    margin: 15px;
-    width: 120px;
-    border-radius: 10px;
-    float: right;
-    box-sizing: border-box;
-}
-
-/* banner5 */
-#banner .smallbanner3{
-    background-color: #AF9F8D;
-    min-width: 340px;
-    width: 31%;
-    height: 25vh;
-    margin: 10px;
-    border-radius: 10px;
-    align-items: center;
-    display: flex;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
-}
-
-#banner .smallbanner3 .topic{
-    margin-left: 26px;
-    width: 65%;
-    box-sizing: border-box;
-    float: left;
-}
-
-#banner .smallbanner3 img{
-    height: 80%;
-    margin: 15px;
-    width: 120px;
-    border-radius: 10px;
-    float: right;
-    box-sizing: border-box;
-}
 
 /* footer section */
 
@@ -539,7 +456,8 @@ body{
 
 
 /* Strat Media Query */
-@media (max-width:799px) {
+/* Tab size */
+@media (max-width:800px) {
     #navbar{
         display: flex;
         flex-direction: column;
@@ -547,9 +465,9 @@ body{
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        right: -300px;
+        right: -250px;
         height: 100vh;
-        width: 300px;
+        width: 250px;
         background-color: #302824;
         box-shadow: 0 40px 60px rgba(0,0,0,0.2);
         padding: 80px 0 0 10px;
@@ -569,11 +487,73 @@ body{
     }
 
     #close{
+        display: block;
         position: absolute;
         top: 32px;
         left: 24px;
         color: #AF9F8D;
         font-size: 24px;
+    }
+    
+    #newarrivals .product{
+        min-width: 180px;
+    }
+
+    #newarrivals{
+        padding: 30px;
+    }
+    #footer{
+        padding: 30px;
+    }
+}
+
+/* Mobile Phone size */
+@media (max-width: 480px) {
+    #navbar{
+        width: 200px;
+    }
+    #header{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #newarrivals{
+        padding: 30px;
+    }
+    #newarrivals .product-container{
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    #newarrivals .product{
+        min-width: 150px;
+    }
+    #newarrivals .product .cart{
+        font-size: 12px;
+    }
+    #banner{
+        padding: 30px;
+    }
+    #banner .bigbanner{
+        min-width: 360px;
+        height: 35vh;
+    }
+    #banner .bigbanner .topic{
+        margin-left: 20px;
+    }
+    #banner .bigbanner img{
+        height: 60%;
+    }
+    #banner h4{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #banner h2{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    #footer{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
     }
 }
 
