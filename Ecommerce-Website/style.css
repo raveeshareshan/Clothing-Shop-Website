@@ -147,9 +147,9 @@ body{
 
 .shopnow button{
     background-color: #302824;
-    width: 20vw;
-    height: 4vw;
-    font-size: 2.5vw;
+    width: 15vw;
+    height: 3vw;
+    font-size: 2vw;
     border: none;
     position: absolute;
     top: 80%;
@@ -508,7 +508,7 @@ body{
 }
 
 /* Mobile Phone size */
-@media (max-width: 300px) {
+@media (max-width: 380px) {
     #navbar{
         width: 200px;
     }
