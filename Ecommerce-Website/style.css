@@ -457,7 +457,7 @@ body{
 
 /* Strat Media Query */
 /* Tab size */
-@media (max-width:800px) {
+@media (max-width:760px) {
     #navbar{
         display: flex;
         flex-direction: column;
@@ -508,7 +508,7 @@ body{
 }
 
 /* Mobile Phone size */
-@media (max-width: 400px) {
+@media (max-width: 360px) {
     #navbar{
         width: 200px;
     }
