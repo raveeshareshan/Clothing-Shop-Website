@@ -508,7 +508,7 @@ body{
 }
 
 /* Mobile Phone size */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     #navbar{
         width: 200px;
     }
