@@ -253,7 +253,7 @@ body{
     background-color: #AF9F8D;
 }
 
-/* Quick Shopping section */
+/* Best sellings section */
 #banner{
     background-color: #DEDCD7;
 }
@@ -404,14 +404,6 @@ body{
 #footer a{
     text-decoration: none;
     color: #DEDCD7;
-}
-
-#footer .col-3{
-    margin-left: 10px;
-}
-
-#footer .col-2{
-    margin-left: 10px;
 }
 
 #footer .col-3 img{
