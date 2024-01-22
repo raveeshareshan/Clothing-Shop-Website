@@ -127,7 +127,8 @@ body{
 
 
 
-/* Home page */
+/* ///  Home page   /// */
+
 /* Cover section */
 #cover{
     background-color: #DEDCD7;
@@ -434,17 +435,55 @@ body{
     transform-origin: bottom left;
 }
 
-/* Shop page */
+
+
+
+/* ///  Shop page   /// */
+
+#quick-shopping{
+    background-color: #DEDCD7;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+}
+
+#buttons{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shops {
+    width: 300px;
+    padding: 4px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #302824;
+}
+
+.shops:hover{
+    background-color: #AF9F8D;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
 
 
 
 
-/* About page */
 
 
 
 
-/* Contact page */
+
+
+
+
 
 
 /* Strat Media Query */
